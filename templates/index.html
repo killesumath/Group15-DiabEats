@@ -1,1 +1,48 @@
-<h1>Hello Index Page</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+    
+        <section class="header">
+            <a class="logo">DiabEats</a>
+            <nav class="navbar">
+                <a href="about.html">About</a>
+                <a href="mealplan.html">Meal Plans</a>
+                <a href="history.html">History</a>
+                <a href="profile.html"><i class="fas fa-user" id="profile-icon"></i></a>
+            </nav>
+        </section>
+    
+
+        <div class="card-list">
+            <a href="#" class="card-item">
+                <img src="../static/img/Diet_recom.jpg" alt="Card Image">
+                <span class="diet_recommendation">Diet Recommendation</span>
+                <h3>Get Healthy Diet Plan</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+            <a href="#" class="card-item">
+                <img src="../static/img/analyize_nutrition-1024x923.jpg" alt="Card Image">
+                <span class="image_recognization">Upload Image and Calculate your Nutrition</span>
+                <h3>Calculate your nutrtional intake.</h3>
+                <div class="arrow">
+                    <i class="fas fa-arrow-right card-icon"></i>
+                </div>
+            </a>
+        </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
